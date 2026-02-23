@@ -11,7 +11,7 @@ const Certificates = () => {
       provider: 'Coursera',
       year: '2023',
       description: 'Mastered techniques for creative problem-solving and innovative thinking',
-      link: 'https://samson-lgs.github.io/creative%20thinking.pdf',
+      link: '/certificates/creative thinking.pdf',
       category: 'Professional Skills'
     },
     {
@@ -20,7 +20,7 @@ const Certificates = () => {
       provider: 'Coursera',
       year: '2023',
       description: 'Learned design thinking methodology for innovative problem-solving',
-      link: 'https://samson-lgs.github.io/design%20thinking.pdf',
+      link: '/certificates/design thinking.pdf',
       category: 'Professional Skills'
     },
     {
@@ -29,7 +29,7 @@ const Certificates = () => {
       provider: 'NPTEL',
       year: '2025',
       description: 'Comprehensive Python programming course covering core concepts and advanced topics',
-      link: 'https://samson-lgs.github.io/python.pdf',
+      link: '/certificates/python.pdf',
       category: 'Programming'
     },
     {
@@ -38,7 +38,7 @@ const Certificates = () => {
       provider: 'Infosys Springboard',
       year: '2024',
       description: 'Advanced course on data science applications using Python, including data analysis and visualization',
-      link: 'https://samson-lgs.github.io/python%20for%20ds.pdf',
+      link: '/certificates/python for ds.pdf',
       category: 'Data Science'
     },
     {
@@ -47,7 +47,7 @@ const Certificates = () => {
       provider: 'Infosys Springboard',
       year: '2024',
       description: 'Comprehensive course on database management and SQL fundamentals using Oracle',
-      link: 'https://samson-lgs.github.io/SQL.pdf',
+      link: '/certificates/SQL.pdf',
       category: 'Database'
     },
     {
@@ -56,7 +56,7 @@ const Certificates = () => {
       provider: 'Infosys Springboard',
       year: '2025',
       description: 'Core concepts of Java programming language and object-oriented programming',
-      link: 'https://samson-lgs.github.io/java.pdf',
+      link: '/certificates/java.pdf',
       category: 'Programming'
     }
   ];
