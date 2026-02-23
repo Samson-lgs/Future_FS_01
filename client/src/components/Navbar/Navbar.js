@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -17,12 +17,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { to: 'home', label: 'Home' },
-    { to: 'about', label: 'About' },
-    { to: 'skills', label: 'Skills' },
-    { to: 'projects', label: 'Projects' },
-    { to: 'certificates', label: 'Certificates' },
-    { to: 'contact', label: 'Contact' }
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About' },
+    { to: '/skills', label: 'Skills' },
+    { to: '/projects', label: 'Projects' },
+    { to: '/certificates', label: 'Certificates' },
+    { to: '/contact', label: 'Contact' }
   ];
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
@@ -32,9 +32,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <Link 
-            to="home" 
-            smooth={true} 
-            duration={500} 
+            to="/" 
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
@@ -46,12 +44,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-70}
                 className="nav-link"
-                activeClass="active"
-                spy={true}
                 onClick={closeMobileMenu}
               >
                 {link.label}

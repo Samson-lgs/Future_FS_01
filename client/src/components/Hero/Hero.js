@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 import './Hero.css';
@@ -27,8 +28,8 @@ const Hero = () => {
               </p>
               
               <div className="hero-buttons">
-                <a href="#projects" className="btn-primary">View Projects</a>
-                <a href="#contact" className="btn-secondary">Contact Me</a>
+                <Link to="/projects" className="btn-primary">View Projects</Link>
+                <Link to="/contact" className="btn-secondary">Contact Me</Link>
               </div>
 
               <div className="hero-social">
@@ -51,11 +52,9 @@ const Hero = () => {
                   <FaLinkedin />
                 </a>
                 <a 
-                  href="https://x.com/SanjayS85522176" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="tel:+918762534156" 
                   className="social-link"
-                  aria-label="Twitter/X Profile"
+                  aria-label="Phone"
                 >
                   <FaPhone />
                 </a>

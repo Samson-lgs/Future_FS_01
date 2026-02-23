@@ -30,16 +30,12 @@ function App() {
         <div className="App">
           <Navbar />
           <Routes>
-            <Route path="/" element={
-              <>
-                <Hero />
-                <About />
-                <Skills />
-                <Projects />
-                <Certificates />
-                <Contact />
-              </>
-            } />
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/certificates" element={<Certificates />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </div>
