@@ -7,13 +7,15 @@ import './App.css';
 
 // Components
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Projects from './components/Projects/Projects';
-import Certificates from './components/Certificates/Certificates';
-import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+
+// Pages
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import SkillsPage from './pages/SkillsPage';
+import ProjectsPage from './pages/ProjectsPage';
+import CertificatesPage from './pages/CertificatesPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   useEffect(() => {
@@ -30,12 +32,12 @@ function App() {
         <div className="App">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/certificates" element={<Certificates />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/certificates" element={<CertificatesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
           <Footer />
         </div>

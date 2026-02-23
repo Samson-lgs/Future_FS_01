@@ -118,10 +118,12 @@
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   box-shadow: var(--shadow-xl);
   border: 6px solid var(--bg-white);
   display: block;
+  background: var(--bg-white);
+  transform: scale(1.1);
 }
 
 .profile-placeholder {

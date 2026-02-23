@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="nav-link"
+                className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}
                 onClick={closeMobileMenu}
               >
                 {link.label}
