@@ -28,7 +28,7 @@ const Hero = () => {
               
               <div className="hero-buttons">
                 <a href="/projects" className="btn-primary">View Projects</a>
-                <a href="/Samson Jose J.pdf" download className="btn-secondary">Download Resume</a>
+                <a href="/resume.pdf" download className="btn-secondary">Download Resume</a>
                 <a href="/contact" className="btn-secondary">Contact Me</a>
               </div>
 
@@ -72,7 +72,7 @@ const Hero = () => {
               <div className="image-wrapper">
                 <div className="animated-border"></div>
                 <img 
-                  src="/Profile pic.jpeg" 
+                  src="/profile-photo.jpeg" 
                   alt="Samson Jose J - Profile" 
                   className="profile-photo"
                 />
