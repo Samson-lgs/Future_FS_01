@@ -27,9 +27,7 @@ const Hero = () => {
               </p>
               
               <div className="hero-buttons">
-                <a href="/projects" className="btn-primary">View Projects</a>
-                <a href="/resume.pdf" download className="btn-secondary">Download Resume</a>
-                <a href="/contact" className="btn-secondary">Contact Me</a>
+                <a href="/resume.pdf" download className="btn-primary">Download Resume</a>
               </div>
 
               <div className="hero-social">
