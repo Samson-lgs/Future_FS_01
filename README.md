@@ -7,6 +7,10 @@ A modern, full-stack personal portfolio website built with React.js and Node.js,
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-success)
 
+### 🌐 Live Deployment
+**Frontend**: [GitHub Pages](https://Samson-lgs.github.io/Future_FS_01) (Static)  
+**Backend**: Not deployed (requires Render/Railway/Heroku for full functionality)
+
 ---
 
 ## 📌 About This Project
@@ -45,6 +49,8 @@ A live portfolio website with source code hosted on GitHub.
 - **Responsive Design** - Mobile-first approach, works on all devices
 
 ### 🔧 Backend
+> **Note**: Backend features require separate hosting (Render/Railway/Heroku). Not available on GitHub Pages static deployment.
+
 - **Node.js & Express** - RESTful API for data management
 - **MongoDB Database** - Store contact messages and project information
 - **Email Notifications** - Nodemailer integration for contact form
@@ -58,8 +64,10 @@ A live portfolio website with source code hosted on GitHub.
 - ✅ Skills section with proficiency indicators
 - ✅ Projects showcase (Malware Detection, Air Quality Prediction, Portfolio)
 - ✅ Certificates & Achievements section with 6+ certifications
-- ✅ Contact form with email notifications
+- ✅ Contact form UI (⚠️ form submissions require backend deployment)
 - ✅ Professional footer with quick links
+
+> **GitHub Pages Deployment**: All sections are visible and functional. Contact form requires separate backend hosting to actually send emails and store messages.
 
 ---
 
@@ -264,50 +272,95 @@ Modify CSS variables in `client/src/index.css`:
 
 ## 🌐 Deployment
 
-### Deploy to Heroku
+### 🎯 GitHub Pages Deployment (Frontend Only)
 
-1. **Install Heroku CLI**
-   ```bash
-   npm install -g heroku
-   ```
+**Current Deployment**: The frontend is hosted on GitHub Pages (static hosting).
 
-2. **Login and create app**
-   ```bash
-   heroku login
-   heroku create your-portfolio-name
-   ```
+#### Deploy Frontend to GitHub Pages
 
-3. **Set environment variables**
-   ```bash
-   heroku config:set MONGODB_URI=your-mongodb-uri
-   heroku config:set EMAIL_USER=your-email
-   heroku config:set EMAIL_PASS=your-password
-   ```
-
-4. **Deploy**
-   ```bash
-   git push heroku main
-   ```
-
-### Deploy to Vercel (Frontend)
-
-1. Install Vercel CLI
-   ```bash
-   npm install -g vercel
-   ```
-
-2. Deploy
+1. **Build the React app**
    ```bash
    cd client
-   vercel
+   npm run build
    ```
 
-### Deploy Backend to Render/Railway
+2. **Install gh-pages package** (if not already installed)
+   ```bash
+   npm install --save-dev gh-pages
+   ```
 
-- Push your code to GitHub
-- Connect your repository to Render or Railway
-- Set environment variables in the dashboard
-- Deploy automatically
+3. **Add to `client/package.json`**
+   ```json
+   "homepage": "https://Samson-lgs.github.io/Future_FS_01",
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+
+4. **Deploy to GitHub Pages**
+   ```bash
+   npm run deploy
+   ```
+
+5. **Access your site at**: `https://Samson-lgs.github.io/Future_FS_01`
+
+#### ⚠️ GitHub Pages Limitations
+
+GitHub Pages only serves **static files** (HTML, CSS, JavaScript):
+- ✅ **Works**: All UI components, sections, animations, routing
+- ❌ **Does NOT work**: Backend features (contact form submissions, database, email notifications)
+
+---
+
+### 🚀 Full-Stack Deployment Options
+
+To enable **backend functionality** (contact form, database, emails), deploy backend separately:
+
+#### Option 1: Backend on Render (Recommended - Free Tier)
+
+1. **Push code to GitHub**
+2. **Go to [Render Dashboard](https://render.com)**
+3. **Create New Web Service**
+   - Connect your GitHub repository
+   - Root directory: `server`
+   - Build command: `npm install`
+   - Start command: `node server.js`
+4. **Add Environment Variables**:
+   ```
+   MONGODB_URI=your-mongodb-atlas-uri
+   EMAIL_USER=your-email@gmail.com
+   EMAIL_PASS=your-app-password
+   EMAIL_TO=sanjaysamson0522@gmail.com
+   CLIENT_URL=https://Samson-lgs.github.io/Future_FS_01
+   ```
+5. **Deploy** - Render will provide a backend URL
+6. **Update frontend** to use backend URL for API calls
+
+#### Option 2: Backend on Railway
+
+- Similar to Render with free tier
+- Connect GitHub repository
+- Set environment variables
+- Auto-deploy on push
+
+#### Option 3: Full-Stack on Vercel
+
+Deploy both frontend and backend together:
+```bash
+# Deploy from root directory
+vercel
+```
+- Requires `vercel.json` configuration
+- Backend runs as serverless functions
+
+#### Option 4: Full-Stack on Heroku
+
+```bash
+heroku create your-portfolio-name
+heroku config:set MONGODB_URI=your-uri EMAIL_USER=email EMAIL_PASS=password
+git push heroku main
+```
 
 ---
 
