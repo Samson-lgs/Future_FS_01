@@ -1,4 +1,4 @@
-# 🌟 Personal Portfolio Website - Samson Jose J
+# 🌟 Personal Professional Portfolio Website
 
 A modern, full-stack personal portfolio website built with React.js and Node.js, featuring an interactive resume, project showcase, and contact form with email notifications.
 
@@ -6,6 +6,31 @@ A modern, full-stack personal portfolio website built with React.js and Node.js,
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-success)
+
+---
+
+## 📌 About This Project
+
+### Task 1 - Future Interns Full Stack Web Development
+
+🔹 **Task**: Build a personal portfolio website to showcase your skills, projects, and professional profile.
+
+🔹 **Frontend**: HTML / CSS / JavaScript (React.js recommended)
+
+🔹 **Backend**: Node.js (optional – for contact form or blog features)
+
+🔹 **Database**: MongoDB / MySQL (optional – for storing messages or project updates)
+
+### 🎯 Key Features:
+- ✔ Interactive resume & portfolio sections
+- ✔ Contact form with email notifications
+- ✔ SEO-friendly structure for better visibility
+
+### 📦 Deliverable:
+A live portfolio website with source code hosted on GitHub.
+
+**Developer**: Samson Jose J  
+**Internship**: Future Interns - Full Stack Web Development
 
 ---
 
