@@ -38,6 +38,15 @@ const Projects = () => {
       liveLink: 'https://samson-lgs.github.io/',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
       featured: true
+    },
+    {
+      _id: '4',
+      title: 'AI-Based Automated Attendance System',
+      description: 'Intelligent automated attendance marking system using advanced face detection, anti-spoofing technology, and face recognition. Detects multiple faces in group photos, prevents spoofing attacks (photos, masks, etc.), and logs attendance with timestamps to Firebase. Won in 24-hour hackathon.',
+      technologies: ['Python', 'PyTorch', 'OpenCV', 'YOLOv8', 'RetinaFace', 'AdaFace', 'Flask', 'Firebase', 'Firestore', 'JavaScript', 'HTML5', 'CSS3'],
+      githubLink: 'https://github.com/npshashank05/AI-Based-Automated-Attendance-System',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+      featured: true
     }
   ];
 
