@@ -2,7 +2,7 @@
   "name": "portfolio-client",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://samson-lgs.github.io/Future_FS_01",
+  "homepage": "https://samson-lgs.github.io",
   "dependencies": {
     "aos": "^2.3.4",
     "axios": "^1.6.0",
