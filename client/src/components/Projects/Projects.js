@@ -22,7 +22,7 @@ const DEFAULT_PROJECTS = [
     description: 'Real-time air quality prediction system using regression models. Analyzes environmental data to forecast air quality index with interactive visualizations and machine learning algorithms.',
     technologies: ['Python', 'Machine Learning', 'Regression', 'Data Analysis', 'Real-time Processing'],
     githubLink: 'https://github.com/Samson-lgs/AQI_Prediction_Regression_RealTime',
-    image: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop',
     featured: true
   },
   {
