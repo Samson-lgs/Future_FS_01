@@ -28,7 +28,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/Future_FS_01">
         <div className="App">
           <Navbar />
           <Routes>
