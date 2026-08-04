@@ -8,12 +8,12 @@ import './Projects.css';
 const DEFAULT_PROJECTS = [
   {
     _id: '1',
-    title: 'Malware Detection System',
-    description: 'ML-based system for detecting and classifying malicious software using pattern recognition algorithms. Advanced machine learning system with real-time detection capabilities.',
-    technologies: ['Python', 'Scikit-Learn', 'Pandas', 'Streamlit', 'Machine Learning'],
-    githubLink: 'https://github.com/Samson-lgs/Malware-Detection',
-    liveLink: 'https://malware-detection-8qvzmlhfotdwguscgzr3e5.streamlit.app/',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+    title: 'Brain Tumor Recognition Using Machine Learning',
+    description: 'A final-year AI project focused on recognizing brain tumors from medical imaging data using machine learning models such as KNN, Random Forest, MLP, Decision Tree, and SVM. The system aims to support early and accurate disease detection through comparative model analysis.',
+    technologies: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'KNN', 'Random Forest', 'MLP', 'Decision Tree', 'SVM', 'Machine Learning'],
+    githubLink: '',
+    liveLink: '',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop',
     featured: true
   },
   {
@@ -86,7 +86,7 @@ const Projects = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Explore projects including Malware Detection, Air Quality Prediction, and Full-Stack Web Development" />
+        <meta name="description" content="Explore projects including Brain Tumor Recognition, Air Quality Prediction, and Full-Stack Web Development" />
       </Helmet>
       
       <section id="projects" className="section projects">

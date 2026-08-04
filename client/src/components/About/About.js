@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Learn more about Samson Jose J - 3rd Year CSE-AIML Student at VTU with 8.9 CGPA, specializing in AI and Machine Learning" />
+        <meta name="description" content="Learn more about Samson Jose J - Final Year CSE-AIML Student at VTU with 8.86 CGPA, specializing in AI and Machine Learning" />
       </Helmet>
       
       <section id="about" className="section about">
@@ -17,10 +17,10 @@ const About = () => {
           <div className="about-content">
             <div className="about-text" data-aos="fade-right">
               <p className="about-intro">
-                Hi! I'm <strong>Samson Jose J</strong>, a 3rd year <strong>CSE-AIML student</strong> with a passion 
+                Hi! I'm <strong>Samson Jose J</strong>, a final year <strong>CSE-AIML student</strong> with a passion 
                 for artificial intelligence and machine learning. Currently pursuing my Bachelor's degree in 
                 Computer Science Engineering with specialization in AI & ML at <strong>ATME College of Engineering, 
-                VTU</strong> (CGPA: 8.9/10.0).
+                VTU</strong> (CGPA: 8.86/10.0).
               </p>
               
               <p className="about-description">
@@ -45,7 +45,7 @@ const About = () => {
                 </div>
                 <h3>Education</h3>
                 <p>ATME College of Engineering</p>
-                <p className="card-subtitle">CGPA: 8.9/10.0 (2023-2027)</p>
+                <p className="card-subtitle">CGPA: 8.86/10.0 (2023-2027)</p>
               </div>
 
               <div className="about-card" data-aos="fade-up" data-aos-delay="200">
@@ -53,7 +53,7 @@ const About = () => {
                   <FaCode />
                 </div>
                 <h3>Year of Study</h3>
-                <p>3rd Year Student</p>
+                <p>Final Year Student</p>
                 <p className="card-subtitle">CSE-AIML</p>
               </div>
 

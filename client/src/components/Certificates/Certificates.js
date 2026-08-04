@@ -61,6 +61,42 @@ const Certificates = () => {
     }
   ];
 
+  // VTU BE Honors certificates (final year diploma/course scores)
+  const vtuHonors = [
+    {
+      id: 101,
+      title: 'Programming In Java',
+      provider: 'VTU',
+      year: '2025',
+      percentage: '97%',
+      link: '/certificates/java.pdf'
+    },
+    {
+      id: 102,
+      title: 'Introduction To Industry 4.0 And Industrial Internet of Things',
+      provider: 'VTU',
+      year: '2025',
+      percentage: '99%',
+      link: '/certificates/Introduction To Industry 4.0 And Industrial Internet of Things.pdf'
+    },
+    {
+      id: 103,
+      title: 'The Joy Of Computing Using Python',
+      provider: 'VTU',
+      year: '2025',
+      percentage: '84%',
+      link: '/certificates/python.pdf'
+    },
+    {
+      id: 104,
+      title: 'Introduction To Machine Learning',
+      provider: 'VTU',
+      year: '2025',
+      percentage: '85%',
+      link: '/certificates/python for ds.pdf'
+    }
+  ];
+
   return (
     <>
       <Helmet>
@@ -107,6 +143,48 @@ const Certificates = () => {
                   >
                     <FaExternalLinkAlt /> View Certificate
                   </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <h3 className="section-subtitle" data-aos="fade-up" data-aos-delay="100">VTU BE Honors</h3>
+          <div className="certificates-grid vtu-grid">
+            {vtuHonors.map((cert, idx) => (
+              <div 
+                key={cert.id} 
+                className="certificate-card" 
+                data-aos="fade-up" 
+                data-aos-delay={idx * 100}
+              >
+                <div className="certificate-header">
+                  <div className="certificate-icon">
+                    <FaCertificate />
+                  </div>
+                  <span className="certificate-category">VTU BE Honors</span>
+                </div>
+
+                <div className="certificate-content">
+                  <h3 className="certificate-title">{cert.title}</h3>
+                  <div className="certificate-meta">
+                    <span className="certificate-provider">{cert.provider}</span>
+                    <span className="certificate-year">{cert.year}</span>
+                  </div>
+
+                  <p className="certificate-description">Score: {cert.percentage}</p>
+
+                  {cert.link ? (
+                    <a 
+                      href={cert.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="certificate-link"
+                    >
+                      <FaExternalLinkAlt /> View Certificate
+                    </a>
+                  ) : (
+                    <p className="certificate-missing">Certificate file not found</p>
+                  )}
                 </div>
               </div>
             ))}

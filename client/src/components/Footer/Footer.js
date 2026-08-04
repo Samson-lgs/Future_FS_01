@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-logo">Samson Jose J</h3>
             <p className="footer-description">
-              3rd Year CSE-AIML Student at VTU. Passionate about AI & Machine Learning.
+              4th/Final Year CSE-AIML Student at VTU. Passionate about AI & Machine Learning.
               Learning and building intelligent solutions for tomorrow.
             </p>
           </div>

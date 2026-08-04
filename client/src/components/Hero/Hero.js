@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <Helmet>
         <title>Samson Jose J - CSE-AIML Student Portfolio</title>
-        <meta name="description" content="3rd Year CSE-AIML Student at VTU (CGPA: 8.9). Passionate about AI & Machine Learning. Explore my projects including Malware Detection and more." />
+        <meta name="description" content="Final Year CSE-AIML Student at VTU (CGPA: 8.86). Passionate about AI & Machine Learning. Explore my projects including Malware Detection and more." />
       </Helmet>
       
       <section id="home" className="hero">
@@ -18,11 +18,11 @@ const Hero = () => {
               <p className="hero-greeting">Hello, I'm</p>
               <h1 className="hero-name">Samson Jose J</h1>
               <h2 className="hero-title">
-                <span className="typing-text">3rd Year CSE-AIML Student & Developer</span>
+                <span className="typing-text">4th/Final Year CSE-AIML Student & Developer</span>
               </h2>
               <p className="hero-description">
                 Passionate about artificial intelligence and machine learning. Currently pursuing Bachelor's in 
-                Computer Science Engineering (AI & ML) at VTU with 8.9 CGPA. Focused on learning cutting-edge 
+                Computer Science Engineering (AI & ML) at VTU with 8.86 CGPA. Focused on learning cutting-edge 
                 AI technologies and applying them to solve real-world problems.
               </p>
               
